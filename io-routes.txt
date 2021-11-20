@@ -1,0 +1,721 @@
+[
+  {
+    "event": "esign-docTag",
+    "database": "esign",
+    "table": "docTag",
+    "columns": [
+      {
+        "field": "id",
+        "primary": true,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "docId",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "tagId",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      }
+    ],
+    "rights": [
+      {
+        "rights": null
+      }
+    ],
+    "connected": true,
+    "private": null,
+    "groupClientId": null,
+    "userId": null,
+    "validators": []
+  },
+  {
+    "event": "esign-docUser",
+    "database": "esign",
+    "table": "docUser",
+    "columns": [
+      {
+        "field": "id",
+        "primary": true,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "userId",
+        "primary": false,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "groupClientId",
+        "primary": false,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "docId",
+        "primary": false,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "reason",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "uuid",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 45
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "pdfId",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "ip",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "readedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "refusedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "signedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "createdAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": "CURRENT_TIMESTAMP",
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "updatedAt",
+        "primary": false,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "deletedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      }
+    ],
+    "rights": [
+      {
+        "rights": null
+      }
+    ],
+    "connected": true,
+    "private": "userId",
+    "groupClientId": null,
+    "userId": "userId",
+    "validators": []
+  },
+  {
+    "event": "esign-docUserCode",
+    "database": "esign",
+    "table": "docUserCode",
+    "columns": [
+      {
+        "field": "docUserId",
+        "primary": true,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "code",
+        "primary": false,
+        "required": true,
+        "options": {
+          "min": 0,
+          "max": 255
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "phone",
+        "primary": false,
+        "required": true,
+        "options": {
+          "min": 0,
+          "max": 15
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "createdAt",
+        "primary": false,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "updatedAt",
+        "primary": false,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "deletedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      }
+    ],
+    "rights": [
+      {
+        "rights": null
+      }
+    ],
+    "connected": true,
+    "private": null,
+    "groupClientId": null,
+    "userId": null,
+    "validators": []
+  },
+  {
+    "event": "esign-docs",
+    "database": "esign",
+    "table": "docs",
+    "columns": [
+      {
+        "field": "id",
+        "primary": true,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "name",
+        "primary": false,
+        "required": true,
+        "options": {
+          "min": 0,
+          "max": 255
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "fileName",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "description",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "groupClientId",
+        "primary": false,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "type",
+        "primary": false,
+        "required": true,
+        "options": {
+          "values": [
+            "enum('single'",
+            "'multiple')"
+          ]
+        },
+        "default": "single",
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "mention",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 65535
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "showMention",
+        "primary": false,
+        "required": true,
+        "options": {
+          "values": [
+            0,
+            1,
+            "0",
+            "1"
+          ]
+        },
+        "default": "0",
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "modern",
+        "primary": false,
+        "required": true,
+        "options": {
+          "values": [
+            0,
+            1,
+            "0",
+            "1"
+          ]
+        },
+        "default": "1",
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "userId",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "folderId",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "pdfId",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 255
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "fields",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 65535
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "png",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 45
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "approvedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "createdAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": "CURRENT_TIMESTAMP",
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "updatedAt",
+        "primary": false,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "deletedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      }
+    ],
+    "rights": [
+      {
+        "rights": null
+      }
+    ],
+    "connected": true,
+    "private": "userId",
+    "groupClientId": null,
+    "userId": "userId",
+    "validators": []
+  },
+  {
+    "event": "esign-folders",
+    "database": "esign",
+    "table": "folders",
+    "columns": [
+      {
+        "field": "id",
+        "primary": true,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "groupClientId",
+        "primary": false,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "folderId",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "label",
+        "primary": false,
+        "required": true,
+        "options": {
+          "min": 0,
+          "max": 100
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "createdAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "updatedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "deletedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      }
+    ],
+    "rights": [
+      {
+        "rights": null
+      }
+    ],
+    "connected": true,
+    "private": null,
+    "groupClientId": null,
+    "userId": null,
+    "validators": []
+  },
+  {
+    "event": "esign-tags",
+    "database": "esign",
+    "table": "tags",
+    "columns": [
+      {
+        "field": "id",
+        "primary": true,
+        "required": true,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "groupClientId",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "label",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 64
+        },
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "color",
+        "primary": false,
+        "required": false,
+        "options": {
+          "min": 0,
+          "max": 7
+        },
+        "default": "#ffffff",
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "createdAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "updatedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      },
+      {
+        "field": "deletedAt",
+        "primary": false,
+        "required": false,
+        "options": null,
+        "default": null,
+        "validators": [
+          null
+        ]
+      }
+    ],
+    "rights": [
+      {
+        "rights": null
+      }
+    ],
+    "connected": true,
+    "private": null,
+    "groupClientId": null,
+    "userId": null,
+    "validators": []
+  }
+]
