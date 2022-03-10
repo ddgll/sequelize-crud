@@ -1,20 +1,20 @@
 module.exports = {
   sequelize: {
-    database: 'WAP',
-    username: 'appteam',
-    password: 'teC66Sud',
+    database: "biotops-qualif",
+    username: "appteam",
+    password: "teC66Sud",
     host: {
-      host: 'ptl-dgdwap-dev.czy79injlrrq.eu-west-1.rds.amazonaws.com',
-      dialect: 'mysql',
+      host: "",
+      dialect: "mysql",
       dialectOptions: {
-        dateStrings: true
-      }
-    }
+        dateStrings: true,
+      },
+    },
   },
   definitions: [
     {
-      database: 'esign',
-      accesses: ['erp-esign']
-    }
-  ]
-}
+      database: "esign",
+      accesses: ["erp-esign"],
+    },
+  ],
+};
